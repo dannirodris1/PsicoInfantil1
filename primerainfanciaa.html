@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"/>
+
+  <title>Psicología del Desarrollo Infantil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+ <nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="1/Arcoiris-PNG-Background.png" alt="Logo" width="50" height="45" class="me-2" />
+      Psicología del Desarrollo Infantil
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menuPrincipal"
+      aria-controls="menuPrincipal"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Etapas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Primera Infancia</a></li>
+            <li><a class="dropdown-item" href="infanciatempranaa.html">Infancia Temprana</a></li>
+</nav>
+
+<div class="prii"> 
+<section class="banner">
+    <div class="banner-content">
+      <h4><i class="fa-solid fa-star"></i> ICH</h4>
+      <h1>Primera Infancia</h1>
+      <p>La primera infancia, es una etapa crítica del desarrollo infantil en la que se sientan las bases emocionales, cognitivas y sociales del ser humano.</p>
+      <button class="read-more-btn">Lee más<i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="banner-image">
+      <img src="3/pexels-pixabay-265987.jpg" alt="Niña estudiando">
+      <div class="image-fade"></div>
+    </div>
+  </section>
+</div>
+
+
+  <div class="info-card" id="infoCard">
+    <div class="card-content">
+      <h3>Más información</h3>
+      <p>Durante los primeros dos años de vida, el niño experimenta un crecimiento acelerado tanto a nivel cerebral como conductual. Esta fase está marcada por la formación del apego, el desarrollo sensorial y motor, el inicio del lenguaje y la construcción de la identidad a través de la relación con sus cuidadores principales.</p>
+      <button class="close-btn"><i class="fa-solid fa-xmark"></i> Cerrar</button>
+    </div>
+  </div>
+
+<section class="frase-animada-section">
+  <p class="frase-animada">“Cada etapa del desarrollo deja huellas en el alma del niño.”</p>
+</section>
+
+<div class="pri"> 
+ <section class="headspace-options">
+    <h2>Explorando la Primera Infancia</h2>
+  <div class="options-grid">
+    <div class="option-card" data-option="hito">
+      <img src="3/bebejugandoo.png" alt="hito">
+      <p>Hitos del Desarrollo Motor</p>
+    </div>
+    <div class="option-card" data-option="len">
+      <img src="3/burbuuu.jpeg" alt="len">
+      <p>Lenguaje y Comunicación Inicial</p>
+    </div>
+    <div class="option-card" data-option="exp">
+      <img src="3/senso.png" alt="exp">
+      <p>Exploración Sensorial </p>
+    </div>
+    <div class="option-card" data-option="rut">
+      <img src="3/familia de bb.jpeg" alt="rut">
+      <p>Rutinas y Vínculos Familiares</p>
+    </div>
+
+    </div>
+  </section>
+</div>
+
+<div id="modalOverlay" class="modal hidden">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalContent"></p>
+    </div>
+  </div>
+
+
+
+<div id="modalOverlay" class="modal hidden">
+  <div class="modal-content">
+    <button id="modalClose" class="modal-close">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalContent"></p>
+  </div>
+</div>
+
+<div class="modal-overlay hidden" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <h3 id="modalTitle">Title</h3>
+    <p id="modalContent">Description will go here.</p>
+  </div>
+</div>
+
+<article class="article-consejos">
+    <div class="stars-background">
+  <video class="stars-video" autoplay muted loop playsinline>
+    <source src="2/6943215-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+  <div class="video-overlay"></div>
+
+
+
+    <div class="about-images">
+      <img src="3/pexels-rdne-6849497.jpg" class="img-1" alt="Clase con padre">
+      <img src="3/pexels-polesietoys-31136997.jpg" class="img-2" alt="Niños jugando">
+    </div>
+
+
+    <div class="about-text">
+      <h5>Lee con atención...</h5>
+      <h2>Consejos Prácticos</h2>
+      <p>Los primeros dos años son clave para el desarrollo emocional y cognitivo, por eso es vital ofrecer un entorno seguro y afectivo. </p>
+
+      <ul class="tips-list">
+        <li>
+          <span class="number">1</span>
+          <div>
+            <strong>Fomentar un apego seguro</strong><br>
+            Responder de forma sensible y consistente a las necesidades del bebé (hambre, llanto, consuelo) fortalece el vínculo emocional, lo que es fundamental para su confianza y estabilidad emocional futura.
+
+
+          </div>
+        </li>
+        <li>
+          <span class="number">2</span>
+          <div>
+            <strong> Estimular con afecto y juego</strong><br>
+           El juego simple, el contacto visual, hablarle y usar juguetes apropiados para la edad favorecen el desarrollo cognitivo, sensorial y emocional, además de fortalecer la relación cuidador-niño.
+
+
+          </div>
+        </li>
+        <li>
+          <span class="number">3</span>
+          <div>
+            <strong>Crear rutinas predecibles</strong><br>
+            Establecer horarios para dormir, comer y jugar brinda al bebé una sensación de seguridad y control sobre su entorno, lo cual apoya el desarrollo de la autorregulación y reduce la ansiedad.
+
+
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+   
+<div class="titulo-wrapper">
+  <h2 class="titulo-seccion">Aspectos Clave del Desarrollo Psicológico </h2>
+  <p class="intro-parrafo">
+    Explora las etapas emocionales y mentales clave que atraviesa una bebe en su primera infancia.
+  </p>
+</div>
+
+
+    <div class="cards-container">
+      <div class="card-cuaderno color-ver">
+        <div class="img-box">
+          <img src="3/pexels-shkrabaanthony-6134647.jpg" alt="Etapa 1">
+        </div>
+        <div class="info-box">
+          <h5>Regulación del estrés a través del adulto </h5>
+          <p>El bebé aún no puede calmarse solo, por lo que necesita figuras adultas que lo ayuden a regular sus emociones y niveles de estrés.</p>
+        </div>
+      </div>
+
+      <div class="card-cuaderno color-melo">
+        <div class="img-box">
+          <img src="3/pexels-baby-minhchou-806254678-32292526.jpg" alt="Etapa 2">
+        </div>
+        <div class="info-box">
+          <h5>Construcción de la permanencia del objeto</h5>
+          <p>Empieza a entender que las personas y objetos existen aunque no los vea, lo cual influye en su seguridad emocional.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cards-container">
+      <div class="card-cuaderno color-melo">
+        <div class="img-box">
+          <img src="3/pexels-william-fortunato-6393387.jpg" alt="Etapa 3">
+        </div>
+        <div class="info-box">
+          <h5>Desarrollo de la confianza básica </h5>
+          <p>El bebé comienza a formar una sensación de confianza o desconfianza hacia el mundo, según cómo respondan sus cuidadores a sus necesidades.</p>
+        </div>
+      </div>
+
+      <div class="card-cuaderno color-ver">
+        <div class="img-box">
+          <img src="3/pexels-sarah-chai-7282613.jpg" alt="Etapa 4">
+        </div>
+        <div class="info-box">
+          <h5>Desarrollo del vínculo afectivo múltiple</h5>
+          <p>A medida que crece, el bebé forma lazos con más de una figura significativa (madre, padre, abuelos, cuidadores), lo cual amplía su mundo emocional.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cards-container">
+      <div class="card-cuaderno color-ver">
+        <div class="img-box">
+          <img src="3/pexels-tatianasyrikova-3933250.jpg" alt="Etapa 5">
+        </div>
+        <div class="info-box">
+          <h5>Sensibilidad al lenguaje emocional</h5>
+          <p>Los bebés aprenden a reconocer el tono de voz, expresiones faciales y emociones en los adultos, base para la empatía futura.</p>
+        </div>
+      </div>
+
+      <div class="card-cuaderno color-melo">
+        <div class="img-box">
+          <img src="3/pexels-polesietoys-31136997.jpg" alt="Etapa 6">
+        </div>
+        <div class="info-box">
+          <h5>Inicio de la autonomía (final del segundo año)</h5>
+          <p>Comienza a surgir el deseo de explorar y hacer cosas por sí mismo, lo que sienta las bases para el desarrollo de la independencia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="carousel-container">
+ <div class="scroll-carousel" id="carousel">
+   <img src="carrupri/descarga (1).jpeg" alt="1">
+   <img src="carrupri/pexels-pixabay-36039.jpg" alt="2">
+   <img src="3/save = follow.jpeg" alt="3">
+   <img src="carrupri/pexels-pixabay-459976.jpg" alt="4">
+   <img src="carrupri/descarga.jpeg" alt="5">
+   <img src="carrupri/descarga (1).jpeg" alt="1">
+   <img src="carrupri/pexels-pixabay-36039.jpg" alt="2">
+   <img src="3/save = follow.jpeg" alt="3">
+   <img src="carrupri/pexels-pixabay-459976.jpg" alt="4">
+   <img src="carrupri/descarga.jpeg" alt="5">
+  </div>
+</div>
+<footer class="footer-custom">
+  <div class="footer-container">
+
+ 
+    <div class="footer-col">
+      <img src="1/Arcoiris-PNG-Background.png" alt="Logo" class="footer-logo">
+      <h4 class="brand-name">Psicología del Desarrollo Infantil</del></h4>
+      <p class="brand-desc">
+       El propósito de esta página es diseñar y desarrollar una página web accesible y educativa dirigida a padres, maestros y cuidadores, con el fin de proporcionar información confiable y práctica sobre el desarrollo psicológico infantil.
+
+
+      </p>
+    </div>
+
+
+    <div class="footer-col center-col"> 
+  <h5>LINKS</h5>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="juegos.html">Juegos</a></li>
+    <li><a href="padres.html">Guía</a></li>
+  </ul>
+</div>
+
+    <div class="footer-col">
+      <h5>INFORMACIÓN</h5>
+      <p class="info-text">
+       Entender la mente de un niño es el primer paso para guiarlo con amor y conciencia. Esta página es un espacio para apoyar, informar y acompañar en el crecimiento emocional de la infancia. Juntos construimos un mejor comienzo.
+      </p>
+    </div>
+    <div class="footer-bottom">
+    <p>©2025 PDI. Derechos Reservados.</p>
+  </div>
+
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function revealOnScroll() {
+    const frases = document.querySelectorAll('.frase-animada');
+    frases.forEach(frase => {
+      const rect = frase.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        frase.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.getElementById('carousel');
+  let scrollSpeed = 1;
+
+  function autoScroll() {
+    if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+      carousel.scrollLeft = 0; 
+    } else {
+      carousel.scrollLeft += scrollSpeed;
+    }
+  }
+
+  let scrollInterval = setInterval(autoScroll, 20);
+
+  carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
+  carousel.addEventListener('mouseleave', () => {
+    scrollInterval = setInterval(autoScroll, 20);
+  });
+});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.option-card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        cards.forEach(c => {
+          c.classList.remove('active');
+          c.querySelector('.mini-description').classList.add('hidden');
+        });
+
+        card.classList.add('active');
+        const description = card.querySelector('.mini-description');
+        description.classList.remove('hidden');
+      });
+    });
+  });
+</script>
+
+<script>
+    const optionCards = document.querySelectorAll('.option-card');
+    const modal = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const modalClose = document.getElementById('modalClose');
+
+    optionCards.forEach(card => {
+      card.addEventListener('click', () => {
+       
+        optionCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+
+        const option = card.getAttribute('data-option');
+        if(option === 'hito') {
+          modalTitle.textContent = 'Hitos del Desarrollo Motor';
+          modalContent.textContent = 'Los bebés desarrollan habilidades físicas paso a paso, como sostener la cabeza, sentarse, gatear y caminar';
+        } else if(option === 'len') {
+          modalTitle.textContent = 'Lenguaje y Comunicación Inicial';
+          modalContent.textContent = 'Empiezan con balbuceos, luego dicen sus primeras palabras y entienden gestos simple';
+        } else if(option === 'exp') {
+          modalTitle.textContent = 'Exploracion Sensorial';
+          modalContent.textContent = 'Descubren el mundo usando sus sentidos: miran, tocan, oyen, prueban y huelen todo lo que los rodea';
+        } else if(option === 'rut') {
+          modalTitle.textContent = 'Rutinas y Vínculos Familiares';
+          modalContent.textContent = 'Las rutinas diarias (baño, comida, sueño) fortalecen el vínculo afectivo con su familia.';
+        } 
+
+        modal.classList.remove('hidden');
+      });
+    });
+
+    modalClose.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      optionCards.forEach(c => c.classList.remove('active'));
+    });
+
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        optionCards.forEach(c => c.classList.remove('active'));
+      }
+    });
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    const infoCard = document.getElementById('infoCard');
+    const closeBtn = document.querySelector('.close-btn');
+
+    readMoreBtn.addEventListener('click', function () {
+      infoCard.classList.add('visible'); 
+    });
+
+    closeBtn.addEventListener('click', function () {
+      infoCard.classList.remove('visible'); 
+    });
+  });
+</script>
+</body>
